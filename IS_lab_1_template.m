@@ -68,10 +68,10 @@ x1=[hsv_value_A1 hsv_value_A2 hsv_value_A3 hsv_value_P1 hsv_value_P2];
 x2=[metric_A1 metric_A2 metric_A3 metric_P1 metric_P2];
 
 x3=[hsv_value_A4 hsv_value_A5 hsv_value_A6 hsv_value_P3 hsv_value_P4];
-x4=[metric_A4 metric_A5 metric_A6 metric_P3 metric_P4];
+x4=[metric_A4 metric_A5 metric_A6 metric_P2 metric_P3];
 
-x5=[hsv_value_A1 hsv_value_A2 hsv_value_A3 hsv_value_P1 hsv_value_P2];
-x6=[metric_A1 metric_A2 metric_A3 metric_P1 metric_P2];
+x5=[hsv_value_A7 hsv_value_A8 hsv_value_A9 hsv_value_P1 hsv_value_P2];
+x6=[metric_A7 metric_A8 metric_A9 metric_P3 metric_P4];
 
 % estimated features are stored in matrix P:
 P=[x1;x2];
