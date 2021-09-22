@@ -238,9 +238,9 @@ e5 = T(5) - y;
 	e = abs(e1) + abs(e2) + abs(e3) + abs(e4) + abs(e5);
 end
 
-x3=[hsv_value_P3 hsv_value_A4 hsv_value_A5 hsv_value_A6  hsv_value_P4];
-x4=[metric_P3 metric_A4 metric_A5 metric_A6  metric_P4];
-Test=[-1;1;1;1;-1];
+x3=[hsv_value_A4 hsv_value_A5 hsv_value_A6 hsv_value_P3 hsv_value_P4];
+x4=[metric_A4 metric_A5 metric_A6 metric_P3 metric_P4];
+
 % calculate wieghted sum with randomly generated parameters
 v1 = x3(1)*w1+x4(1)*w2+b; % write your code here
 % calculate current output of the perceptron 
@@ -250,7 +250,7 @@ else
 	y = -1;
 end
 % calculate the error
-e1 = Test(1) - y
+e1 = T(1) - y;
 
 % repeat the same for the rest 4 inputs x3 and x4
 % calculate wieghted sum with randomly generated parameters
@@ -262,7 +262,7 @@ else
 	y = -1;
 end
 % calculate the error
-e2 = Test(2) - y
+e2 = T(2) - y;
 
 % calculate wieghted sum with randomly generated parameters
  v3 = x3(3)*w1+x4(3)*w2+b; % write your code here
@@ -273,7 +273,7 @@ else
 	y = -1;
 end
 % calculate the error
-e3 = Test(3) - y
+e3 = T(3) - y;
 % <...> write the code for another 3 inputs
 
 % calculate wieghted sum with randomly generated parameters
@@ -285,7 +285,7 @@ else
 	y = -1;
 end
 % calculate the error
-e4 = Test(4) - y
+e4 = T(4) - y;
 
 % calculate wieghted sum with randomly generated parameters
  v5 = x3(5)*w1+x4(5)*w2+b; % write your code here
@@ -296,7 +296,7 @@ else
 	y = -1;
 end
 % calculate the error
-e5 = Test(5) - y
+e5 = T(5) - y;
 
 % calculate the total error for these 5 inputs 
 e = abs(e1) + abs(e2) + abs(e3) + abs(e4) + abs(e5)
